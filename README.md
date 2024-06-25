@@ -113,8 +113,11 @@ CLIENT_SECRET="YOUR_CLIENT_SECRET_HERE"
 
 Replace YOUR_SESSION_SECRET_HERE, YOUR_CLIENT_ID_HERE, and YOUR_CLIENT_SECRET_HERE with your actual values.
 
-###Step 4: Configure Passport
+### Step 4: Configure Passport
 
+Passport is a popular middleware for Node.js that provides a simple and flexible way to handle authentication in web applications. It supports various authentication strategies, allowing you to authenticate users using different methods, such as username and password, social login (like Google, Facebook, Twitter), OAuth, JWT (JSON Web Tokens), and more.
+
+Passport-google-oauth2 is a strategy for Passport.js to authenticate users using their Google accounts through OAuth 2.0. 
 
 ```bash
 const passport = require('passport');

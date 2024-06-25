@@ -100,3 +100,6 @@ Install necessary packages in your terminal:
 
 ```bash
 npm i express dotenv ejs express-session passport passport-google-oauth2
+
+
+touch passport.js

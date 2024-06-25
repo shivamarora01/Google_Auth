@@ -103,9 +103,40 @@ npm i express dotenv ejs express-session passport passport-google-oauth2
 ```
 
 ### Step 3: Environment Variables
-Create a .env file in the root directory and set up environment variables::
+Create a .env file in the root directory and set up environment variables:
+
 ```bash
 SESSION_SECRET="YOUR_SESSION_SECRET_HERE" >
 CLIENT_ID="YOUR_CLIENT_ID_HERE"
 CLIENT_SECRET="YOUR_CLIENT_SECRET_HERE"
+```
+
+Replace YOUR_SESSION_SECRET_HERE, YOUR_CLIENT_ID_HERE, and YOUR_CLIENT_SECRET_HERE with your actual values.
+
+###Step 4: Configure Passport
+
+
+```bash
+mkdir routes
+touch routes/userRouter.js
+
+const passport = require('passport');
+const GoogleStrategy = require('passport-google-oauth2').Strategy;
+
+passport.serializeUser((user, done) => {
+    done(null, user);
+});
+
+passport.deserializeUser((user, done) => {
+    done(null, user);
+});
+
+passport.use(new GoogleStrategy({
+    clientID: process.env.CLIENT_ID,
+    clientSecret: process.env.CLIENT_SECRET,
+    callbackURL: "http://localhost:3000/auth/google/callback",
+    passReqToCallback: true
+}, (request, accessToken, refreshToken, profile, done) => {
+    return done(null, profile);
+}));
 ```

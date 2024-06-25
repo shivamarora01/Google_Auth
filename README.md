@@ -3,7 +3,7 @@
 
 ****Steps for Client ID & Client Secret****
 
-**Step 1:** open <https://console.developers.google.com/>  and you will be directed to this page![](https://drive.google.com/file/d/1u71-OriOL1XNGPDlRBPLIUOJUzHDhHVv/view?usp=sharing)
+**Step 1:** open <https://console.developers.google.com/>  and you will be directed to this page![]https://dochub.com/shivamarora-07-sa/8adOrbPVQE0BJkpV24Mj7D/screenshot-2024-06-25-114147-png)
 
 
 

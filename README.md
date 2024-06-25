@@ -57,7 +57,9 @@ Add the **App information name** and **user mail**:
 ### Step 11: Save and Continue
 Click **SAVE AND CONTINUE** for the next scope and test users:
 
-![Step 11](https://drive.google.com/uc?export=view&id=1ga_7ywLe_nzTtl852uA0R22RgWd74S6U)
+![Step 11](https://drive.google.com/uc?export=view&id=1G7Yqy7X-7CJACX-BefciVC-zEtzxVF7t)
+
+![Step 11](https://drive.google.com/uc?export=view&id=1obpi2DMigkPEjhSBs5Yg_CUKm9samFBF)
 
 ### Step 12: Create OAuth Client ID Again
 Click on the **Credentials** option and then click on the **create credentials** button again in the credentials page:

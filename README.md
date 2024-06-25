@@ -89,9 +89,6 @@ Copy and paste the keys into your project where needed:
 ### Step 1: Open VSCode and Setup Node.js
 Set up Node.js environment in your preferred code editor.
 
-### Reference Files:
-- [Google Login Link](https://drive.google.com/file/d/1Hpt-hGoZZmgte9-V541v9_1blj-qC92l/view?usp=sharing)
-
 ### Directory Structure:
 ![Directory Structure](Aspose.Words.c4f8087a-1578-4c87-94a2-2f68d1367562.018.png)
 
@@ -115,7 +112,7 @@ Replace YOUR_SESSION_SECRET_HERE, YOUR_CLIENT_ID_HERE, and YOUR_CLIENT_SECRET_HE
 
 ### Step 4: Configure Passport
 
-Passport is a popular middleware for Node.js that provides a simple and flexible way to handle authentication in web applications. It supports various authentication strategies, allowing you to authenticate users using different methods, such as username and password, social login (like Google, Facebook, Twitter), OAuth, JWT (JSON Web Tokens), and more.
+**Note:** Passport is a popular middleware for Node.js that provides a simple and flexible way to handle authentication in web applications. It supports various authentication strategies, allowing you to authenticate users using different methods, such as username and password, social login (like Google, Facebook, Twitter), OAuth, JWT (JSON Web Tokens), and more.
 
 Passport-google-oauth2 is a strategy for Passport.js to authenticate users using their Google accounts through OAuth 2.0. 
 

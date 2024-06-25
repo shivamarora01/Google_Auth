@@ -90,7 +90,7 @@ Copy and paste the keys into your project where needed:
 Set up Node.js environment in your preferred code editor.
 
 ### Directory Structure:
-![Directory Structure](Aspose.Words.c4f8087a-1578-4c87-94a2-2f68d1367562.018.png)
+![Directory Structure](https://drive.google.com/uc?export=view&id=1gyt6mlpAXBaezdLegO_twtIzJDfD3Seo)
 
 ### Step 2: Install Required Packages
 Install necessary packages in your terminal:
@@ -208,27 +208,67 @@ Initializes Passport session support, which is typically needed when using persi
 router.use(passport.initialize());
 router.use(passport.session());
 ```
-#### successGoogleLogin Function:
+#### Route /auth/google/callback (GET):
+Handles the callback from Google after authentication.
+```bash
+router.get('/auth/google/callback',
+    passport.authenticate('google', {
+        successRedirect: '/success', // Redirect to '/success' if authentication succeeds
+        failureRedirect: '/failure' // Redirect to '/failure' if authentication fails
+    })
+);
+```
+
+#### Route /success (GET)::
 Handles the response after a successful Google login.
 ```bash
-const successGoogleLogin = (req, res) => {
-    if (!req.user) {
-        res.redirect('/failure');
-    }
-    console.log(req.user);
-    res.send("Welcome " + req.user.email);
-}
-
+router.get('/success', userController.successGoogleLogin);
 ```
-#### failureGoogleLogin Function::
+#### Route /failure (GET)::
 Handles the response after a failed Google login
 
 ```bash
-const failureGoogleLogin = (req, res) => {
-    // Send a generic error message indicating login failure.
-    res.send("Error");
-}
+router.get('/failure', userController.failureGoogleLogin);
 ```
 
+#### Step 6: Configure Main index.js
+This file (server.js or similar) sets up a basic Node.js application using Express with session management and EJS as the view engine. Let's go through each part of the code to understand what it does:
 
+##### Session Management Setup:
+app.use(session({ ... })): Configures session management middleware:
+resave: false: Prevents the session from being saved to the session store on every request unless the session data has been modified.
+saveUninitialized: true: Forces a session that is "uninitialized" to be saved to the store. A session is uninitialized when it is new but not modified.
+secret: process.env.SESSION_SECRET: Specifies the secret used to sign the session ID cookie. This secret is retrieved from the environment variable SESSION_SECRET set in the .env file.
+```bash
+const session = require('express-session');
 
+app.use(session({
+    resave: false,
+    saveUninitialized: true,
+    secret: process.env.SESSION_SECRET
+}));
+
+````
+##### Routing Setup
+
+```bash
+const userRoutes = require('./routes/userRoute');
+app.use('/', userRoutes);
+
+```
+
+##### Server Start
+
+```bash
+app.listen(3000, () => {
+    console.log("Server Running on port 3000");
+});
+
+```
+
+#### STEP 7: EJS Views
+Create a auth.ejs file in views directory under the server directory to render the authentication page:
+
+```bash
+<button><a href='/auth/google'>Login With Google</a></button>
+```

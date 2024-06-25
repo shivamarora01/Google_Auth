@@ -231,7 +231,7 @@ Handles the response after a failed Google login
 router.get('/failure', userController.failureGoogleLogin);
 ```
 
-#### Step 6: Configure Main index.js
+### Step 6: Configure Main index.js
 This file (server.js or similar) sets up a basic Node.js application using Express with session management and EJS as the view engine. Let's go through each part of the code to understand what it does:
 
 ##### Session Management Setup:
@@ -266,7 +266,7 @@ app.listen(3000, () => {
 
 ```
 
-#### STEP 7: EJS Views
+### STEP 7: EJS Views
 Create a auth.ejs file in views directory under the server directory to render the authentication page:
 
 ```bash

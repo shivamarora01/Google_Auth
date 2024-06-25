@@ -111,33 +111,41 @@ CLIENT_SECRET="YOUR_CLIENT_SECRET_HERE"
 Replace YOUR_SESSION_SECRET_HERE, YOUR_CLIENT_ID_HERE, and YOUR_CLIENT_SECRET_HERE with your actual values.
 
 ### Step 4: Configure Passport
+Create passport.js file in your main root folder to configure Passport with the Google strategy:
 
 **Note:** Passport is a popular middleware for Node.js that provides a simple and flexible way to handle authentication in web applications. It supports various authentication strategies, allowing you to authenticate users using different methods, such as username and password, social login (like Google, Facebook, Twitter), OAuth, JWT (JSON Web Tokens), and more.
 
 Passport-google-oauth2 is a strategy for Passport.js to authenticate users using their Google accounts through OAuth 2.0. 
 
 ```bash
-const passport = require('passport');  // Require the 'passport' module, which handles authentication.
-const GoogleStrategy = require('passport-google-oauth2').Strategy;  // Require the Google OAuth 2.0 strategy for Passport.
+const passport = require('passport');
+const GoogleStrategy = require('passport-google-oauth2').Strategy;
 
-// Serialize user information to store in the session.
-passport.serializeUser((user, done) => {
-    done(null, user);  // Calls the 'done' callback with 'null' error and the 'user' object.
+
+//serializeUser defines how user information is stored in the session
+passport.serializeUser((user , done) => {
+    done(null , user);
+})
+
+
+//deserializeUser defines how user information is retrieved from the //session
+passport.deserializeUser(function(user, done) {
+    done(null, user);
 });
 
-// Deserialize user information from the session.
-passport.deserializeUser((user, done) => {
-    done(null, user);  // Calls the 'done' callback with 'null' error and the 'user' object.
-});
 
-// Configure the Google OAuth 2.0 strategy for Passport.
+//Google Strategy Configuration
 passport.use(new GoogleStrategy({
-    clientID: process.env.CLIENT_ID,  // Client ID obtained from Google Developer Console.
-    clientSecret: process.env.CLIENT_SECRET,  // Client Secret obtained from Google Developer Console.
-    callbackURL: "http://localhost:3000/auth/google/callback",  // Callback URL to redirect after Google authentication.
-    passReqToCallback: true  // Passes the request object as the first argument to the callback function.
-}, (request, accessToken, refreshToken, profile, done) => {
-    return done(null, profile);  // Callback function called after Google has authenticated the user, passing the user profile to 'done'.
-}));
+    clientID:process.env.CLIENT_ID, // Your Credentials here.
+    clientSecret:process.env.CLIENT_SECRET, // Your Credentials here.
+    callbackURL:"http://localhost:3000/auth/google/callback",
+    passReqToCallback:true
+},
+// callback function that is called after Google has authenticated the user.
+function(request, accessToken, refreshToken, profile, done) {
+    return done(null, profile);
+}
+));
+
 
 ```

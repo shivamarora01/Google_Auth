@@ -10,7 +10,7 @@ Open [Google Developer Console](https://console.developers.google.com/) and you 
 ### Step 2: Access Projects Dropdown
 Click on the **dropdown of Projects**:
 
-![Step 2](https://drive.google.com/uc?export=view&id=1sqAYCgxSqToRNYcrZUe9P3-q_OL-Rgpae)
+![Step 2](https://drive.google.com/uc?export=view&id=1goWq-VO_jgRhYrMsk9aTZrimcSTNGfzx)
 
 ### Step 3: Create a New Project
 Tap on **New Project** as shown below:

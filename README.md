@@ -25,7 +25,7 @@ Create a **New Project** by adding a Project name:
 ### Step 5: Select Your Project
 You will be directed to the dashboard. Go to the projects dropdown and select your project:
 
-![Step 5](https://drive.google.com/uc?export=view&id=c9hn4qLy9kEr2Hu9aqgVRz-RcA3vBM5e)
+![Step 5](https://drive.google.com/uc?export=view&id=1c9hn4qLy9kEr2Hu9aqgVRz-RcA3vBM5e)
 
 ### Step 6: Navigate to Credentials
 Click on the **Credentials** option and then click on the **create credentials** button in the credentials page:

@@ -118,7 +118,7 @@ Create passport.js file in your main root folder to configure Passport with the 
 Passport-google-oauth2 is a strategy for Passport.js to authenticate users using their Google accounts through OAuth 2.0. 
 
 
-##### Passport Initialization and Google Strategy Setup:
+#### Passport Initialization and Google Strategy Setup:
 ```bash
 const passport = require('passport');
 const GoogleStrategy = require('passport-google-oauth2').Strategy;

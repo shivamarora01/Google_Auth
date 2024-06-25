@@ -98,9 +98,12 @@ Set up Node.js environment in your preferred code editor.
 ### Step 2: Install Required Packages
 Install necessary packages in your terminal:
 
+
+```bash
 echo "SESSION_SECRET=\"YOUR_SESSION_SECRET_HERE\"" > .env
 echo "CLIENT_ID=\"YOUR_CLIENT_ID_HERE\"" >> .env
 echo "CLIENT_SECRET=\"YOUR_CLIENT_SECRET_HERE\"" >> .env
+```
 
 ```bash
 npm i express dotenv ejs express-session passport passport-google-oauth2

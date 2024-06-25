@@ -14,62 +14,31 @@
 
 ![](https://drive.google.com/uc?export=view&id=1Pic7uCu4uSVDX5ZlKA81L4ZP5BixtWIM)
 
-
-
-
 **Step 4:** Create a **New Project** by adding a Project name 
 
-![](Aspose.Words.c4f8087a-1578-4c87-94a2-2f68d1367562.004.png)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+![](https://drive.google.com/uc?export=view&id=1TnoHVS6waMv29dP9l78pNzWy-G6v18md)
 
 **Step 5:** You will be directed to the dashboard , then go to the projects dropdown and select your project 
 
-![](Aspose.Words.c4f8087a-1578-4c87-94a2-2f68d1367562.005.png)
+![](https://drive.google.com/uc?export=view&id=c9hn4qLy9kEr2Hu9aqgVRz-RcA3vBM5e)
 
 **Step 6:** Click on the **Credentials** options and then go to the **create credentials** button in the credentials page
 
-![ref1]
+![](https://drive.google.com/uc?export=view&id=1LQ5ZNAML6N2TWvOn0Yax0DCENc66DIt0)
 
 **Step 7:** Click on the **OAuth Client ID** and then click on the **create credentials button** in the credentials page
 
-![ref2]
+![](https://drive.google.com/uc?export=view&id=1KNPBw_gk01oaL6113P_zet0otlC4LMRy)
 
 
 **Step 8:** Click on the **Consent screen button**
 
-![](Aspose.Words.c4f8087a-1578-4c87-94a2-2f68d1367562.008.png)
-
-
-
-
-
-
-
-
+![](https://drive.google.com/uc?export=view&id=1Ckfxc5N7LzKT5rywXMQ5_pAWmrH4HOLT)
 
 
 **Step 9:** Select the User Type External and create the app registration
 
-![](Aspose.Words.c4f8087a-1578-4c87-94a2-2f68d1367562.009.png)
+![](https://drive.google.com/uc?export=view&id=1aSDd_3Da7oCX-kZrCS_2phr4y4-uCqUR)
 
 
 **Step 10:** Add the **App information name** & **user mail**
@@ -78,36 +47,29 @@
 
 **Step 11:** Click **SAVE AND CONTINUE** for next scope and test users
 
-![](Aspose.Words.c4f8087a-1578-4c87-94a2-2f68d1367562.011.png)![](Aspose.Words.c4f8087a-1578-4c87-94a2-2f68d1367562.012.png)
+![](https://drive.google.com/uc?export=view&id=1t-NSfPUD_1Cd9xizfnkbfR_g2mcDz0tv)
 
-
-
-
+![](https://drive.google.com/uc?export=view&id=1ga_7ywLe_nzTtl852uA0R22RgWd74S6U)
 
 
 
 
 **Step 12:** Click on the **Credentials** options and then open on the **create credentials** button in the credentials page
 
-![ref3]
-
-
-
-
-
+![](https://drive.google.com/uc?export=view&id=1LQ5ZNAML6N2TWvOn0Yax0DCENc66DIt0)
 
 **Step 13:** Click on the **OAuth Client ID** and then tap on the create credentials button in the credentials page
 
-![ref4]
-
-
-
-
+![](https://drive.google.com/uc?export=view&id=1KNPBw_gk01oaL6113P_zet0otlC4LMRy)
 
 **Step 14:** Then choose the application type as Web application and add this url <http://localhost:3000/auth/google/callback> into **Authorized redirect URIs**  as we will use it into project for requesting and tap on the create button.
 
 <http://localhost:3000/auth/google/callback> => this port number should be given same as the server will run on port
-![](Aspose.Words.c4f8087a-1578-4c87-94a2-2f68d1367562.015.png)![](Aspose.Words.c4f8087a-1578-4c87-94a2-2f68d1367562.016.png)
+
+![](https://drive.google.com/uc?export=view&id=1K3GKLjgXdc4wLgNMTcwlvp6N6jTo9jZ7)
+
+![](https://drive.google.com/uc?export=view&id=1XjTG7cxfuoE4-3-ZoIKQFcyqWXkUH5NW)
+
 
 **Step 16:** Then the keys can be copy & paste in the project where needed
 ![](Aspose.Words.c4f8087a-1578-4c87-94a2-2f68d1367562.017.png)

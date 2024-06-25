@@ -72,12 +72,15 @@ Click on **OAuth Client ID** and then tap on the **create credentials** button i
 ### Step 14: Configure Web Application
 Choose the application type as **Web application** and add the redirect URI: `http://localhost:3000/auth/google/callback`. Adjust the port number according to your setup.
 
-![Step 14](https://drive.google.com/uc?export=view&id=1K3GKLjgXdc4wLgNMTcwlvp6N6jTo9jZ7)
+![Step 14](https://drive.google.com/uc?export=view&id=1sqAYCgxSqToRNYcrZUe9P3-q_OL-Rgpa)
+
+![Step 14](https://drive.google.com/uc?export=view&id=1k_11fB0EPRonmz7cOZb4NJyVKsS8I0Uj)
 
 ### Step 15: Copy OAuth Keys
 Copy and paste the keys into your project where needed:
 
-![Step 15](https://drive.google.com/uc?export=view&id=1XjTG7cxfuoE4-3-ZoIKQFcyqWXkUH5NW)
+![Step 15](https://drive.google.com/uc?export=view&id=1ppTtjqfYvtnUsJljaocHKVOuboctCPb9)
+
 
 ## Setting Up Node.js Application
 

@@ -121,7 +121,6 @@ Passport-google-oauth2 is a strategy for Passport.js to authenticate users using
 const passport = require('passport');
 const GoogleStrategy = require('passport-google-oauth2').Strategy;
 
-
 //serializeUser defines how user information is stored in the session
 passport.serializeUser((user , done) => {
     done(null , user);
@@ -136,8 +135,8 @@ passport.deserializeUser(function(user, done) {
 
 //Google Strategy Configuration
 passport.use(new GoogleStrategy({
-    clientID:process.env.CLIENT_ID, // Your Credentials here.
-    clientSecret:process.env.CLIENT_SECRET, // Your Credentials here.
+    clientID:process.env.CLIENT_ID, 
+    clientSecret:process.env.CLIENT_SECRET,
     callbackURL:"http://localhost:3000/auth/google/callback",
     passReqToCallback:true
 },

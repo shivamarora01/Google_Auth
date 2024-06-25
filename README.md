@@ -117,9 +117,6 @@ Replace YOUR_SESSION_SECRET_HERE, YOUR_CLIENT_ID_HERE, and YOUR_CLIENT_SECRET_HE
 
 
 ```bash
-mkdir routes
-touch routes/userRouter.js
-
 const passport = require('passport');
 const GoogleStrategy = require('passport-google-oauth2').Strategy;
 

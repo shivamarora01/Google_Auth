@@ -12,7 +12,7 @@
 
 **Step 3:** Tap on **New Project** as shown below…
 
-![](Aspose.Words.c4f8087a-1578-4c87-94a2-2f68d1367562.003.png)
+![](https://drive.google.com/uc?export=view&id=1Pic7uCu4uSVDX5ZlKA81L4ZP5BixtWIM)
 
 
 

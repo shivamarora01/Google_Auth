@@ -117,34 +117,9 @@ Create passport.js file in your main root folder to configure Passport with the 
 
 Passport-google-oauth2 is a strategy for Passport.js to authenticate users using their Google accounts through OAuth 2.0. 
 
+
+## 
 ```bash
 const passport = require('passport');
 const GoogleStrategy = require('passport-google-oauth2').Strategy;
-
-/* serializeUser defines how user information is stored in the session */
-passport.serializeUser((user , done) => {
-    done(null , user);
-})
-
-
-//deserializeUser defines how user information is retrieved from the //session
-passport.deserializeUser(function(user, done) {
-    done(null, user);
-});
-
-
-//Google Strategy Configuration
-passport.use(new GoogleStrategy({
-    clientID:process.env.CLIENT_ID, 
-    clientSecret:process.env.CLIENT_SECRET,
-    callbackURL:"http://localhost:3000/auth/google/callback",
-    passReqToCallback:true
-},
-// callback function that is called after Google has authenticated the user.
-function(request, accessToken, refreshToken, profile, done) {
-    return done(null, profile);
-}
-));
-
-
 ```

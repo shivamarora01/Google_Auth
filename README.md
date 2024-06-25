@@ -3,7 +3,7 @@
 
 ****Steps for Client ID & Client Secret****
 
-**Step 1:** open <https://console.developers.google.com/>  and you will be directed to this page![](Aspose.Words.c4f8087a-1578-4c87-94a2-2f68d1367562.001.png)
+**Step 1:** open <https://console.developers.google.com/>  and you will be directed to this page![](https://drive.google.com/file/d/1u71-OriOL1XNGPDlRBPLIUOJUzHDhHVv/view?usp=sharing)
 
 
 

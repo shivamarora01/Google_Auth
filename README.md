@@ -3,12 +3,12 @@
 
 ****Steps for Client ID & Client Secret****
 
-**Step 1:** open <https://console.developers.google.com/> and you will be directed to this page 
+**Step 1:** Open <https://console.developers.google.com/> and you will be directed to this page 
 ![](https://drive.google.com/uc?export=view&id=1u71-OriOL1XNGPDlRBPLIUOJUzHDhHVv)
 
 **Step 2:** Click on the **dropdown of Projects**
 
-![](https://drive.google.com/file/d/1tRQwZ4Nst6tj5BRBxShZc1ViTuFzrA7n/view?usp=sharing)
+![](https://drive.google.com/uc?export=view&id=1JcZl1GEKsrykQMYSzdQkBySp0SRBIoUe)
 
 
 **Step 3:** Tap on **New Project** as shown below…

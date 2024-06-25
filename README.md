@@ -50,7 +50,9 @@ Select the User Type **External** and complete the app registration:
 ### Step 10: Add App Information
 Add the **App information name** and **user mail**:
 
-![Step 10](https://drive.google.com/uc?export=view&id=1t-NSfPUD_1Cd9xizfnkbfR_g2mcDz0tv)
+![Step 10](https://drive.google.com/uc?export=view&id=1K3GKLjgXdc4wLgNMTcwlvp6N6jTo9jZ7)
+
+![Step 10](https://drive.google.com/uc?export=view&id=1XjTG7cxfuoE4-3-ZoIKQFcyqWXkUH5NW)
 
 ### Step 11: Save and Continue
 Click **SAVE AND CONTINUE** for the next scope and test users:

@@ -15,7 +15,7 @@
 
 **Step 2:** Click on the **dropdown of Projects**
 
-![](Aspose.Words.c4f8087a-1578-4c87-94a2-2f68d1367562.002.png)
+![](https://drive.google.com/file/d/1tRQwZ4Nst6tj5BRBxShZc1ViTuFzrA7n/view?usp=sharing)
 
 
 **Step 3:** Tap on **New Project** as shown below…

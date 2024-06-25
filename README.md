@@ -124,9 +124,9 @@ const passport = require('passport');
 const GoogleStrategy = require('passport-google-oauth2').Strategy;
 ```
 #### Serialize and Deserialize User:
-#####passport.serializeUser: 
+##### passport.serializeUser: 
 Defines how user information is serialized into the session. In this case, it simply passes the user object to done.
-#####passport.deserializeUser: 
+##### passport.deserializeUser: 
 Defines how user information is deserialized from the session. It retrieves the user object from the session storage and passes it to done.
 ```bash
 passport.serializeUser((user , done) => {

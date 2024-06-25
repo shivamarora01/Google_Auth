@@ -8,8 +8,7 @@
 
 **Step 2:** Click on the **dropdown of Projects**
 
-![](https://drive.google.com/uc?export=view&id=1JcZl1GEKsrykQMYSzdQkBySp0SRBIoUe)
-
+![](https://drive.google.com/uc?export=view&id=1sqAYCgxSqToRNYcrZUe9P3-q_OL-Rgpae)
 
 **Step 3:** Tap on **New Project** as shown below…
 

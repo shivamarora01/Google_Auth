@@ -160,3 +160,75 @@ function(request, accessToken, refreshToken, profile, done) {
 }
 ));
 ```
+
+### Step 5: Configure userController
+Create a userController.js file in the controllers directory to handle the responses for the authentication routes.
+
+#### loadAuth Function:
+Renders the authentication page (auth) when a user navigates to the corresponding route.
+```bash
+const loadAuth = (req, res) => {
+    res.render('auth');
+}
+```
+#### successGoogleLogin Function:
+Handles the response after a successful Google login.
+```bash
+const successGoogleLogin = (req, res) => {
+    if (!req.user) {
+        res.redirect('/failure');
+    }
+    console.log(req.user);
+    res.send("Welcome " + req.user.email);
+}
+
+```
+#### failureGoogleLogin Function::
+Handles the response after a failed Google login
+
+```bash
+const failureGoogleLogin = (req, res) => {
+    // Send a generic error message indicating login failure.
+    res.send("Error");
+}
+```
+
+
+### Step 6: Configure userRoute
+Create a userRouter.js in your routes directory to define the routes for authentication
+
+#### Passport Middleware Initialization::
+
+##### router.use(passport.initialize());: 
+Initializes Passport middleware to handle authentication.
+##### router.use(passport.session());: 
+Initializes Passport session support, which is typically needed when using persistent login sessions.
+
+```bash
+router.use(passport.initialize());
+router.use(passport.session());
+```
+#### successGoogleLogin Function:
+Handles the response after a successful Google login.
+```bash
+const successGoogleLogin = (req, res) => {
+    if (!req.user) {
+        res.redirect('/failure');
+    }
+    console.log(req.user);
+    res.send("Welcome " + req.user.email);
+}
+
+```
+#### failureGoogleLogin Function::
+Handles the response after a failed Google login
+
+```bash
+const failureGoogleLogin = (req, res) => {
+    // Send a generic error message indicating login failure.
+    res.send("Error");
+}
+```
+
+
+

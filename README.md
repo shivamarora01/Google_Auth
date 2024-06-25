@@ -117,23 +117,27 @@ Replace YOUR_SESSION_SECRET_HERE, YOUR_CLIENT_ID_HERE, and YOUR_CLIENT_SECRET_HE
 Passport-google-oauth2 is a strategy for Passport.js to authenticate users using their Google accounts through OAuth 2.0. 
 
 ```bash
-const passport = require('passport');
-const GoogleStrategy = require('passport-google-oauth2').Strategy;
+const passport = require('passport');  // Require the 'passport' module, which handles authentication.
+const GoogleStrategy = require('passport-google-oauth2').Strategy;  // Require the Google OAuth 2.0 strategy for Passport.
 
+// Serialize user information to store in the session.
 passport.serializeUser((user, done) => {
-    done(null, user);
+    done(null, user);  // Calls the 'done' callback with 'null' error and the 'user' object.
 });
 
+// Deserialize user information from the session.
 passport.deserializeUser((user, done) => {
-    done(null, user);
+    done(null, user);  // Calls the 'done' callback with 'null' error and the 'user' object.
 });
 
+// Configure the Google OAuth 2.0 strategy for Passport.
 passport.use(new GoogleStrategy({
-    clientID: process.env.CLIENT_ID,
-    clientSecret: process.env.CLIENT_SECRET,
-    callbackURL: "http://localhost:3000/auth/google/callback",
-    passReqToCallback: true
+    clientID: process.env.CLIENT_ID,  // Client ID obtained from Google Developer Console.
+    clientSecret: process.env.CLIENT_SECRET,  // Client Secret obtained from Google Developer Console.
+    callbackURL: "http://localhost:3000/auth/google/callback",  // Callback URL to redirect after Google authentication.
+    passReqToCallback: true  // Passes the request object as the first argument to the callback function.
 }, (request, accessToken, refreshToken, profile, done) => {
-    return done(null, profile);
+    return done(null, profile);  // Callback function called after Google has authenticated the user, passing the user profile to 'done'.
 }));
+
 ```

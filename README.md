@@ -138,3 +138,25 @@ passport.deserializeUser(function(user, done) {
 });
 
 ```
+#### Google Strategy Configuration:
+passport.use(new GoogleStrategy({...}, function(...){...}));: Configures the Google authentication strategy with Passport.
+
+```bash
+passport.use(new GoogleStrategy({
+    clientID:process.env.CLIENT_ID, // Your Credentials here.
+    clientSecret:process.env.CLIENT_SECRET, // Your Credentials here.
+    callbackURL:"http://localhost:3000/auth/google/callback",
+    passReqToCallback:true
+},
+
+```
+
+#### Callback Function:
+The callback function (request, accessToken, refreshToken, profile, done) is executed after Google has authenticated the user.
+```bash
+user.
+function(request, accessToken, refreshToken, profile, done) {
+    return done(null, profile);
+}
+));
+```

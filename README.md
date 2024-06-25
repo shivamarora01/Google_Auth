@@ -93,4 +93,3 @@ Install necessary packages in your terminal:
 
 ```bash
 npm i express dotenv ejs express-session passport passport-google-oauth2
-Words.c4f8087a-1578-4c87-94a2-2f68d1367562.014.png
